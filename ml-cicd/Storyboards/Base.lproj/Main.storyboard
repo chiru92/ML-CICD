@@ -78,6 +78,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="JFn-w6-rdC" id="fRs-b4-TfW"/>
+                        <outlet property="photoButton" destination="fmi-dI-0XB" id="Odl-4j-W21"/>
                         <segue destination="yTj-tY-kH3" kind="modal" id="hk6-yX-fGo"/>
                     </connections>
                 </viewController>
@@ -143,8 +145,17 @@
                         <viewLayoutGuide key="safeArea" id="vVm-tq-Iys"/>
                     </view>
                     <navigationItem key="navigationItem" id="P3t-5J-shW">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="o5O-Yb-k6l"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="o5O-Yb-k6l">
+                            <connections>
+                                <action selector="closeButtonTask:" destination="GsT-Ya-xc4" id="JE2-kh-aJU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="blurView" destination="40b-6a-BTH" id="obe-i6-9Jd"/>
+                        <outlet property="imageView" destination="PK4-XL-lnd" id="MVI-qo-bNO"/>
+                        <outlet property="nsfwLabel" destination="nb4-Ok-rqQ" id="Gl1-XJ-bWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGU-iy-UXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
