@@ -1,0 +1,16 @@
+PODS:
+  - NSFWDetector (1.1.0)
+
+DEPENDENCIES:
+  - NSFWDetector
+
+SPEC REPOS:
+  trunk:
+    - NSFWDetector
+
+SPEC CHECKSUMS:
+  NSFWDetector: aefec2254932bdc933cccc9385abfe07ae36a7a1
+
+PODFILE CHECKSUM: 34bb4b389455ce75e3a50f56f5dd49375a60b392
+
+COCOAPODS: 1.8.4

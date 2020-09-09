@@ -1,0 +1,6 @@
+framework module Pods_ml_cicdTests {
+  umbrella header "Pods-ml-cicdTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
