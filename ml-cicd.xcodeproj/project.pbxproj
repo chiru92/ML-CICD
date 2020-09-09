@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		48A9C4A12508D7170066DE0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A9C49F2508D7170066DE0D /* LaunchScreen.storyboard */; };
 		48A9C4AC2508D7170066DE0D /* ml_cicdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9C4AB2508D7170066DE0D /* ml_cicdTests.swift */; };
 		48A9C4B72508D7170066DE0D /* ml_cicdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9C4B62508D7170066DE0D /* ml_cicdUITests.swift */; };
+		48A9C4C52508E22E0066DE0D /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9C4C42508E22E0066DE0D /* CameraVC.swift */; };
+		48A9C4CA2508E4970066DE0D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9C4C92508E4970066DE0D /* ImageViewController.swift */; };
+		48A9C4CD2508EF700066DE0D /* Wilhelm_Scream.ogg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48A9C4CC2508EF700066DE0D /* Wilhelm_Scream.ogg.mp3 */; };
 		62FF4264E6ADD069551B7918 /* Pods_ml_cicd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE4EBC490EAB59C503CE4D6 /* Pods_ml_cicd.framework */; };
 		7E2E4AE2115083C3FD5458C2 /* Pods_ml_cicdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312999A3E649AC13B785B70B /* Pods_ml_cicdTests.framework */; };
 		DFC87058E23FB6FB221CEDAF /* Pods_ml_cicd_ml_cicdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8269457D78A2026105A4DAB9 /* Pods_ml_cicd_ml_cicdUITests.framework */; };
@@ -55,6 +58,9 @@
 		48A9C4B22508D7170066DE0D /* ml-cicdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ml-cicdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A9C4B62508D7170066DE0D /* ml_cicdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ml_cicdUITests.swift; sourceTree = "<group>"; };
 		48A9C4B82508D7170066DE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A9C4C42508E22E0066DE0D /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		48A9C4C92508E4970066DE0D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		48A9C4CC2508EF700066DE0D /* Wilhelm_Scream.ogg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wilhelm_Scream.ogg.mp3; sourceTree = "<group>"; };
 		5175F1C530498B37C46F4393 /* Pods-ml-cicd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ml-cicd.release.xcconfig"; path = "Target Support Files/Pods-ml-cicd/Pods-ml-cicd.release.xcconfig"; sourceTree = "<group>"; };
 		605605B4B673A99727653364 /* Pods-ml-cicd-ml-cicdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ml-cicd-ml-cicdUITests.debug.xcconfig"; path = "Target Support Files/Pods-ml-cicd-ml-cicdUITests/Pods-ml-cicd-ml-cicdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8269457D78A2026105A4DAB9 /* Pods_ml_cicd_ml_cicdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ml_cicd_ml_cicdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,12 +122,11 @@
 		48A9C4932508D7150066DE0D /* ml-cicd */ = {
 			isa = PBXGroup;
 			children = (
-				48A9C4942508D7150066DE0D /* AppDelegate.swift */,
-				48A9C4962508D7150066DE0D /* SceneDelegate.swift */,
-				48A9C4982508D7150066DE0D /* ViewController.swift */,
-				48A9C49A2508D7150066DE0D /* Main.storyboard */,
+				48A9C4CB2508EF590066DE0D /* Supporting Files */,
+				48A9C4C82508E25F0066DE0D /* Main Files */,
+				48A9C4C72508E2500066DE0D /* Storyboards */,
+				48A9C4C62508E2350066DE0D /* Controllers */,
 				48A9C49D2508D7170066DE0D /* Assets.xcassets */,
-				48A9C49F2508D7170066DE0D /* LaunchScreen.storyboard */,
 				48A9C4A22508D7170066DE0D /* Info.plist */,
 			);
 			path = "ml-cicd";
@@ -145,6 +150,42 @@
 			path = "ml-cicdUITests";
 			sourceTree = "<group>";
 		};
+		48A9C4C62508E2350066DE0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48A9C4982508D7150066DE0D /* ViewController.swift */,
+				48A9C4C42508E22E0066DE0D /* CameraVC.swift */,
+				48A9C4C92508E4970066DE0D /* ImageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48A9C4C72508E2500066DE0D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				48A9C49A2508D7150066DE0D /* Main.storyboard */,
+				48A9C49F2508D7170066DE0D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		48A9C4C82508E25F0066DE0D /* Main Files */ = {
+			isa = PBXGroup;
+			children = (
+				48A9C4942508D7150066DE0D /* AppDelegate.swift */,
+				48A9C4962508D7150066DE0D /* SceneDelegate.swift */,
+			);
+			path = "Main Files";
+			sourceTree = "<group>";
+		};
+		48A9C4CB2508EF590066DE0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48A9C4CC2508EF700066DE0D /* Wilhelm_Scream.ogg.mp3 */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AB0F8D50FF35B0F5B844921A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +196,6 @@
 				1226376B461264EE113370E0 /* Pods-ml-cicdTests.debug.xcconfig */,
 				C841E334EDCA7ACC131888C4 /* Pods-ml-cicdTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -281,6 +321,7 @@
 				48A9C4A12508D7170066DE0D /* LaunchScreen.storyboard in Resources */,
 				48A9C49E2508D7170066DE0D /* Assets.xcassets in Resources */,
 				48A9C49C2508D7150066DE0D /* Main.storyboard in Resources */,
+				48A9C4CD2508EF700066DE0D /* Wilhelm_Scream.ogg.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +451,9 @@
 			files = (
 				48A9C4992508D7150066DE0D /* ViewController.swift in Sources */,
 				48A9C4952508D7150066DE0D /* AppDelegate.swift in Sources */,
+				48A9C4CA2508E4970066DE0D /* ImageViewController.swift in Sources */,
 				48A9C4972508D7150066DE0D /* SceneDelegate.swift in Sources */,
+				48A9C4C52508E22E0066DE0D /* CameraVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

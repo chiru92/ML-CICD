@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="58" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="73a-ae-XuZ">
             <objects>
-                <viewController id="GsT-Ya-xc4" sceneMemberID="viewController">
+                <viewController id="GsT-Ya-xc4" customClass="ImageViewController" customModule="ml_cicd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8sq-ov-76V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="1692.753623188406" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--CameraVC-->
         <scene sceneID="v4M-Bm-fBO">
             <objects>
-                <viewController id="svM-tW-RTi" sceneMemberID="viewController">
+                <viewController id="svM-tW-RTi" customClass="CameraVC" customModule="ml_cicd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a32-Hc-SPo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,10 +233,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YYU-RB-fNW"/>
                     </view>
+                    <connections>
+                        <outlet property="alarmView" destination="zQT-98-nvG" id="N1O-fg-ac9"/>
+                        <outlet property="closeButton" destination="x0s-fY-WwI" id="97a-6k-PKZ"/>
+                        <outlet property="emojiView" destination="NAU-Yc-6fF" id="yKa-My-o2l"/>
+                        <outlet property="nsfwLabel" destination="Rrm-DK-9WQ" id="Mdx-co-zYY"/>
+                        <outlet property="visualEffectsView" destination="kWj-QF-3bt" id="e99-nh-x5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXH-Pd-1wV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="828"/>
+            <point key="canvasLocation" x="80" y="907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0l4-8Q-lG5">
